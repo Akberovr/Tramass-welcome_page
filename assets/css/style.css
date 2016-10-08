@@ -1,7 +1,67 @@
-@charset "UTF-8";
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  overflow-x: hidden; }
+
+nav {
+  background-color: black;
+  opacity: 0.6;
+  border-radius: 0px !important;
+  background-size: cover;
+  justify-content: center;
+  position: fixed;
+  width: 200px;
+  top: 0px;
+  bottom: 0;
+  z-index: 1000;
+  transform: translate3d(-200px, 0, 0);
+  transition: transform 0.6s ease; }
+  nav ul {
+    list-style-type: none;
+    margin-top: 150px; }
+  nav .a1 {
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 20px  0;
+    font-size: 18px; }
+  nav .a1:hover {
+    border-left: 3px solid #5E96C1; }
+  nav .icon {
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 30px; }
+  nav .nav-toggle-btn {
+    position: absolute;
+    margin: 30px 30px !important;
+    padding: 0px !important;
+    left: 200px;
+    display: block;
+    color: #245372; }
+
+.active-nav nav {
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.6s ease; }
+
+.content {
+  padding-top: 300px;
+  text-align: center;
+  transition: transform 0.6s ease; }
+
+.active-nav .content {
+  transform: translate3d(10px, 0, 0); }
+
+#home {
+  background: url("https://hd.unsplash.com/reserve/22gQ9dqRziaAoZeBpZVY_kornmark-01.png");
+  width: 100%;
+  background-size: cover;
+  height: 700px; }
+
+/*# sourceMappingURL=style.css.map */
