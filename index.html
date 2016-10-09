@@ -11,28 +11,31 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	<nav>
-				<a href="#" class="nav-toggle-btn fa fa-bars fa-2x" aria-hidden="true" style="text-decoration:none;" onmouseenter="openMenu()"></a>
-				<ul>
-					<a href="#" class="fa fa-instagram  fa-2x icon"></a>
-					<a href="#" class="fa fa-facebook  fa-2x icon"></a>
-					<a href="#" class=" fa fa-envelope-o  fa-2x icon"></a>
-					<a href="#" class=" fa fa-twitter  fa-2x icon"></a>
-					<li><a href="#" style=" text-decoration:none;" class="a1" >Tramass</a></li>
-					<li><a href="#"style=" text-decoration:none;" class="a1">About project</a></li>
-					<li><a href="#" style=" text-decoration:none;" class="a1">Our Team</a></li>
-					<li><a href="#" style=" text-decoration:none;" class="a1">Contact Us</a></li>
-				</ul>
-
-</nav>
-<section id="home">
-	<div class="row">
-		<div class="content">
-			<h1>HEllow</h1>
+	<section id="home">
+			<a href="#" class="nav-toggle-btn fa fa-bars fa-2x" aria-hidden="true" style="text-decoration:none;"></a>
+		<nav>
+					<a href="#" class="nav-toggle-btns fa fa-bars fa-2x" aria-hidden="true" style="text-decoration:none;"></a>
+					<ul>
+						<li><a href="#" style=" text-decoration:none;" class="a1 li1 active"> Tramass inc.</a></li>
+						<li><a href="#"style=" text-decoration:none;" class="a1 li2">About project</a></li>
+						<li><a href="#" style=" text-decoration:none;" class="a1 li3">Our Team</a></li>
+						<li><a href="#" style=" text-decoration:none;" class="a1 li4">Contact Us</a></li>
+						<div class="icons" style="display:none;">
+							<a href="#" class="fa fa-facebook  fa-2x icon"></a>
+							<a href="#" class=" fa fa-envelope-o  fa-2x icon"></a>
+							<a href="#" class=" fa fa-twitter  fa-2x icon"></a>
+						</div>
+					</ul>
+	</nav>
+	<div class="container">
+		<div class="heading">
+			<h1><span>	WE MANUFACTURE FURNITURE</span> <br>ACCORDING TO YOUR INDIVIDUAL <br> REQUIREMENTS</h1>
 		</div>
 	</div>
 
+	<a href="#" class=""></a>
 </section>
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -41,18 +44,73 @@
 <script src="assets/js/jquery-3.1.0.min.js"></script>
 
 <script type="text/javascript">
+$(document).ready(function(){
+	$('h1')
+.animate({
+		top:'20px'},
+	550, function() {
+});
+	$('h1 ')
+	.fadeIn(900)
+	$('h1 ')
+
+
+
+});
+
+
+
+
 		(function ()
 		{		var bodyEl = $('body'),
 				 navToggleBtn = bodyEl.find('.nav-toggle-btn');
-				  navToggleBtns = bodyEl.find('.nav-toggle-btns');
+					navToggleBtns = bodyEl.find('.nav-toggle-btns');
 				 navToggleBtn.on('click', function(e){
 					 bodyEl.toggleClass('active-nav');
 					 e.preventDefault();
 				 });
+				 navToggleBtns.on('click', function(e){
+					bodyEl.toggleClass('active-nav');
+					e.preventDefault();
+				});
 		}) ();
+		$('.nav-toggle-btn').click(function() {
+		$('.nav-toggle-btn')
+		.fadeOut('fast')
+			$('.nav-toggle-btns')
+		.animate({
+				top:'30px'},
+			700, function() {
+		});
+		$('.a1')
+	.animate({
+			paddingLeft:'50px'},
+		700, function() {
+	});
 
+		$('.icons,ul')
+	.fadeIn('slow')
+	$('.icons')
 
+	});
 
+	$('.nav-toggle-btns').click(function() {
+		$('.nav-toggle-btn')
+		.fadeIn('slow')
+		$('.nav-toggle-btns')
+	.animate({
+			top:'0px'},
+		600, function() {
+	});
+	$('.a1')
+.animate({
+		paddingLeft:'0px'},
+	700, function() {
+});
+$('.icons,ul')
+.fadeOut('slow')
+$('.icons')
+	});
 
 </script>
 
