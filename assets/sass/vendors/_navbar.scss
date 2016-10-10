@@ -25,7 +25,14 @@ nav{
     list-style-type:none;
     margin-top:150px;
 
+    i{
+      position: relative;
+      top: 30px;
+
+    }
   }
+
+
   .a1{
       color: white;
       display: block;
@@ -65,7 +72,7 @@ nav{
 
 
 #home{
-  background: url('https://hd.unsplash.com/photo-1430769860170-bea225f02277') fixed;
+  background: url('https://images.unsplash.com/photo-1475349048762-d286a3e98370?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=e59471589558220e80cbfd71a7631a5f') fixed;
   width: 100%;
   background-size: cover;
   height: 700px;
@@ -76,11 +83,11 @@ nav{
     left: 80px;
     top: 30px;
     display: block;
-    color: #59A594;
+    color: #FFFED1;
   }
   .heading{
     overflow-y: hidden;
-    position: relative;
+    position: absolute;
     top: 200px;
     height: 350px;
 
@@ -89,16 +96,43 @@ nav{
   h1 {
     text-align: center;
     font-size: 45px;
-    font-family: Verdana;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 2px;
     padding: 50px;
     position: relative;
     top: 280px;
     display: none;
-    color:  #F8FFC5;
+    color:  #FFFEF7;
     font-weight: 900;
     span{
       font-size: 35px;
       font-weight: 300;
     }
   }
+.navbar-brand   {
+    display:none;
+    font-family: 'Righteous', cursive;
+    font-size: 35px;
+    color: black;
+    position: absolute;
+    right: 50px;
+    top:30px;
+
+    span{
+      color:  #C6F322;
+    }
+  }
+  .arrow{
+    display: flex;
+    justify-content: center;
+    .arrows{
+      display: none;
+    }
+    a{
+    position: absolute;
+    bottom:  40px;
+    text-decoration: none;
+    color: white;
+  }
+}
 }

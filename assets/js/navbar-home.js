@@ -1,14 +1,17 @@
-
-<script type="text/javascript">
 $(document).ready(function(){
-	$('h1')
+	$('h1 , .navbar-brand' )
 .animate({
 		top:'20px'},
 	550, function() {
 });
-	$('h1 ')
-	.fadeIn(900)
-	$('h1 ')
+$('.arrows' )
+.animate({
+	bottom:'40px'},
+550, function() {
+});
+	$('h1 , .navbar-brand , .arrows')
+	.fadeIn(600)
+	$('h1 , .navbar-brand , .arrows')
 });
 
 	(function ()
@@ -37,10 +40,10 @@ $(document).ready(function(){
 			paddingLeft:'50px'},
 		700, function() {
 	});
-	$('h1')
+	$('h1 , .navbar-brand , .arrow , .paragraphs , h2')
 .animate({
-		opacity:'0.5'},
-	500, function() {
+		opacity:'0.4'},
+	400, function() {
 });
 		$('.icons,ul')
 	.fadeIn('slow')
@@ -61,7 +64,7 @@ $(document).ready(function(){
 		paddingLeft:'0px'},
 	700, function() {
 });
-$('h1')
+$('h1 , .navbar-brand , .arrow , .paragraphs , h2')
 .animate({
 	opacity:'1'},
 500, function() {
@@ -70,5 +73,25 @@ $('.icons,ul')
 .fadeOut('slow')
 $('.icons')
 	});
-
-</script>
+	function slideArrow(){
+			$('.arrows')
+			.css({
+				color:'#2F4241',
+			});
+			$('.arrows')
+			.animate({
+				marginBottom:'-10px'},
+				400, function() {
+			});
+		}
+		function slideBack(){
+				$('.arrows')
+				.css({
+					color:' #FFFEF7',
+				});
+				$('.arrows')
+				.animate({
+					marginBottom:'0px'},
+					400, function() {
+				});
+			}
