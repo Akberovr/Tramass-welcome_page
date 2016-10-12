@@ -11,13 +11,14 @@ $('.arrows' )
 });
 	$('h1 , .navbar-brand , .arrows')
 	.fadeIn(600)
-	$('h1 , .navbar-brand , .arrows')
+	$(this)
 });
 
 	(function ()
 	{		var bodyEl = $('body'),
 			 navToggleBtn = bodyEl.find('.nav-toggle-btn');
 				navToggleBtns = bodyEl.find('.nav-toggle-btns');
+
 			 navToggleBtn.on('click', function(e){
 				 bodyEl.toggleClass('active-nav');
 				 e.preventDefault();
@@ -26,9 +27,10 @@ $('.arrows' )
 				bodyEl.toggleClass('active-nav');
 				e.preventDefault();
 			});
+
 	}) ();
 		$('.nav-toggle-btn').click(function() {
-		$('.nav-toggle-btn')
+		$(this)
 		.fadeOut('fast')
 			$('.nav-toggle-btns')
 		.animate({
@@ -47,14 +49,13 @@ $('.arrows' )
 });
 		$('.icons,ul')
 	.fadeIn('slow')
-	$('.icons')
-
+	$(this)
 	});
 
 	$('.nav-toggle-btns').click(function() {
 		$('.nav-toggle-btn')
 		.fadeIn('slow')
-		$('.nav-toggle-btns')
+		$(this)
 	.animate({
 			top:'0px'},
 		600, function() {
@@ -71,12 +72,17 @@ $('h1 , .navbar-brand , .arrow , .paragraphs , h2')
 });
 $('.icons,ul')
 .fadeOut('slow')
-$('.icons')
+$(this)
 	});
 	function slideArrow(){
 			$('.arrows')
 			.css({
+				animation: 'pulse 2s ease-in-out infinite',
+				animationDelay: '-3s',
 				color:'#2F4241',
+				border:'1px solid #2F4241',
+				borderRadius:'100px',
+				padding:'0px 10px'
 			});
 			$('.arrows')
 			.animate({
@@ -87,7 +93,7 @@ $('.icons')
 		function slideBack(){
 				$('.arrows')
 				.css({
-					color:' #FFFEF7',
+					animation: 'stop'
 				});
 				$('.arrows')
 				.animate({
